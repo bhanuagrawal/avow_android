@@ -1,0 +1,91 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context="com.avow.bhanu.feedme.fragments.login.MobileNumberRegistrationFragment">
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <!-- Email Label -->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight=".8">
+
+                    <EditText
+                        android:id="@+id/input_country_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Country Code"
+                        android:inputType="phone"
+                        android:text="+91"
+                        android:textColor="@android:color/white" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight=".2"
+                    android:textColorHint="@android:color/white">
+
+                    <EditText
+                        android:id="@+id/input_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Your Mobile Number"
+                        android:inputType="phone"
+                        android:textColor="@android:color/white"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+            </LinearLayout>
+
+
+
+            <!-- Password Label -->
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_seend_code"
+                style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:layout_marginTop="24dp"
+                android:background="@android:color/holo_red_dark"
+                android:fontFamily="sans-serif"
+                android:padding="12dp"
+                android:text="Verify"
+                android:textColor="@android:color/white"
+                android:textColorLink="@android:color/black" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

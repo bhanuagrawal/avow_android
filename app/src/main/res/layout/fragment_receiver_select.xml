@@ -1,0 +1,103 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.avow.bhanu.feedme.fragments.upload.ReceiverSelectFragment">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:background="@color/wallet_bright_foreground_holo_dark">
+
+            <TextView
+                android:id="@+id/header_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="Send To"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <CheckBox
+
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toLeftOf="@+id/subheader_text" />
+
+            <TextView
+                android:id="@+id/subheader_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:text="Select All"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+
+        <ListView
+            android:id="@+id/followers_listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/header"
+            android:layout_above="@+id/upload_footer"
+            />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/upload_footer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@android:color/background_light"
+            android:gravity="center"
+            android:paddingBottom="0dp"
+            android:paddingTop="0dp">
+
+
+            <Button
+                android:id="@+id/cancelUpload1"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Cancel"
+                android:textColor="@color/common_google_signin_btn_text_light_focused"
+                android:textColorLink="@color/place_autocomplete_search_hint" />
+
+            <Button
+                android:id="@+id/FinalUpload"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:background="@android:color/darker_gray"
+                android:text="Send"
+                android:textColor="@android:color/background_light" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

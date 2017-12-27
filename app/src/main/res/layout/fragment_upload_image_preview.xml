@@ -1,0 +1,77 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.avow.bhanu.feedme.fragments.upload.UploadImagePreview">
+
+    <!-- Footer aligned to bottom -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/upload_footer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@android:color/background_light"
+            android:gravity="center"
+            android:paddingBottom="0dp"
+            android:paddingTop="0dp">
+
+
+            <Button
+                android:id="@+id/cancelUpload"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Cancel"
+                android:textColor="@android:color/darker_gray" />
+
+            <Button
+                android:id="@+id/confirmUpload"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:background="@android:color/darker_gray"
+                android:text="Next"
+                android:textColor="@android:color/background_light" />
+        </LinearLayout>
+
+        <!-- Scrollable Item below header and above footer -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/upload_footer">
+
+            <ImageView
+                android:id="@+id/capturedImage1"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:adjustViewBounds="true"
+                android:src="@color/cast_expanded_controller_seek_bar_progress_background_tint_color">
+
+            </ImageView>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+</FrameLayout>
+
+

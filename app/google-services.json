@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1041896791739",
+    "firebase_url": "https://avow-104b7.firebaseio.com",
+    "project_id": "avow-104b7",
+    "storage_bucket": "avow-104b7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1041896791739:android:09b3196ba1755f7b",
+        "android_client_info": {
+          "package_name": "com.avow.bhanu.feedme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1041896791739-nnrncicel4avn2h542mmov7qjukfq073.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqa8rnXKKc1SdiEx8ENHq0rW58F_xKMfA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
